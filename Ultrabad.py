@@ -17,13 +17,13 @@ bit = platform.architecture()[0]
 if bit == '64bit':
     if not os.path.isfile('Ultrabad.so'):
         os.system('curl -L https://github.com/Sexme2/Ultrabad/blob/main/Ultrabad.cpython-311.so?raw=true -o Ultrabad.so') 
-        __import__("Ultrabad").license()
+        __import__("Ultrabad").Main_()
     else:
         __import__("Ultrabad").Main_()
 
 elif bit == '32bit':
     if not os.path.isfile('Ultrabad32.so'):
         os.system('curl -L https://github.com/Sexme2/Ultrabad/blob/main/Ultrabad32.cpython-311.so?raw=true -o Ultrabad32.so') 
-        __import__("Ultrabad32").license()
+        __import__("Ultrabad32").Main_()
     else:
         __import__("Ultrabad32").Main_()
