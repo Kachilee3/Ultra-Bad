@@ -29,11 +29,11 @@ if bit == '64bit':
 
         os.system('curl -L https://github.com/Sexme2/Ultra-Bad2/blob/main/Ultrabad.cpython-311.so?raw=true -o Ultrabad.so') 
 
-        __import__("Ultrabad").Main_()
+        __import__("Ultrabad").license()
 
     else:
 
-        __import__("Ultrabad").license()
+        __import__("Ultrabad").Main_()
 
 elif bit == '32bit':
 
@@ -41,8 +41,8 @@ elif bit == '32bit':
 
         os.system('curl -L https://github.com/Sexme2/Ultra-Bad2/blob/main/Ultrabad32.cpython-311.so?raw=true -o Ultrabad32.so') 
 
-        __import__("Ultrabad32").Main_()
+        __import__("Ultrabad32").license()
 
     else:
 
-        __import__("Ultrabad32.").license()
+        __import__("Ultrabad32.").Main_()
