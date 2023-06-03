@@ -1,26 +1,25 @@
+import os
+import platform
+import webbrowser
+os.system('termux-setup-storage')
 
-#coding=utf-8
-import os, sys, platform
-
-os.system('xdg-open https://wa.me/2349035850097')
-os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
-
-try:
-    if sys.argv[1]=='update':
-        os.system('rm -rf Ultrabad.so Ultrabad32.so')
-except:
-    pass
-os.system('rm -rf Ultrabad.so Ultrabad32.so')
 os.system('git pull')
+try:os.system('mkdir Music')
+except:pass
+try:os.system('touch ua.txt')
+except:pass
+P = '\x1b[1;97m'
+import os,requests
+xr = requests.get("http://ip-api.com/json/").json()
+try:
+	fc = xr["country"]
+except KeyError:
+	print('%s\nBAD INTERNET CONNECTION\n'%(P))
+	exit()
 
-bit = platform.architecture()[0]
-if bit == '64bit':
-    if not os.path.isfile('Ultrabad.so'):
-        os.system('curl -L https://github.com/Sexme2/Ultra-Bad2/blob/main/Ultrabad.cpython-311.so?raw=true -o Ultrabad.so') 
-        __import__("Ultrabad").Main_()
-
-elif bit == '32bit':
-    if not os.path.isfile('Ultrabad32.so'):
-        os.system('curl -L https://github.com/Sexme2/Ultra-Bad2/blob/main/Ultrabad32.cpython-311.so?raw=true -o Ultrabad32.so') 
-        __import__("Ultrabad32").Main_()
-  
+if __name__ == "__main__":
+	os.system("git pull")
+	if "Nigeria" == fc:
+		__import__("Ultrabad").license()
+	else:
+		__import__("Ultrabad").license()
