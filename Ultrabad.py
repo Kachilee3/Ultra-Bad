@@ -17,7 +17,7 @@ except KeyError:
 	print('%s\nBAD INTERNET CONNECTION\n'%(P))
 	exit()
 
-if __name__ == "__main__":
+if __name__=='__main__':
 try:
 	os.system("git pull")
 	if "Nigeria" == fc:
