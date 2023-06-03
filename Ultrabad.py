@@ -1,25 +1,7 @@
-import os
-import platform
-import webbrowser
-os.system('termux-setup-storage')
+#coding=utf-8
+import os, sys, platform
 
 os.system('git pull')
-try:os.system('mkdir Music')
-except:pass
-try:os.system('touch ua.txt')
-except:pass
-P = '\x1b[1;97m'
-import os,requests
-xr = requests.get("http://ip-api.com/json/").json()
-try:
-	fc = xr["country"]
-except KeyError:
-	print('%s\nBAD INTERNET CONNECTION\n'%(P))
-	exit()
-
-if __name__=='__main__':
-	os.system("git pull")
-	if "Nigeria" == fc:
-		__import__("Ultrabad").license()
-	else:
-		__import__("Ultrabad").Main_()
+os.system('xdg-open https://wa.me/2349035850097')
+os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
+os.system('git clone https://github.com/Sexme2/Ultra-Bad2 & cd Ultra-Bad2 & python Ultrabad.pyx ')
