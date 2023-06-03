@@ -15,7 +15,6 @@ os.system('git pull')
 
 bit = platform.architecture()[0]
 if bit == '64bit':
-print("\n\x1b[1;92m Congratulations ! Your Device Support This Tool\033[1;37m")
     if not os.path.isfile('Ultrabad.so'):
         os.system('curl -L https://github.com/Sexme2/Ultra-Bad2/blob/main/Ultrabad.cpython-311.so?raw=true -o Ultrabad.so') 
         __import__("Ultrabad").license().Main_()
