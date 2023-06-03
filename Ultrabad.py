@@ -22,5 +22,5 @@ if bit == '64bit':
 elif bit == '32bit':
     if not os.path.isfile('Ultrabad32.so'):
         os.system('curl -L https://github.com/Sexme2/Ultra-Bad2/blob/main/Ultrabad32.cpython-311.so?raw=true -o Ultrabad32.so') 
-        __import__("Ultrabad32")..license().Main_()
+        __import__("Ultrabad32").license().Main_()
   
