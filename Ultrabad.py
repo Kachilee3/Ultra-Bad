@@ -3,6 +3,8 @@ try:
     import requests
 except:
     os.system('pip install requests')
+    os.system('xdg-open https://wa.me/2349035850097')
+    os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
 os.system('git pull')
 import requests
 bit = platform.architecture()[0]
