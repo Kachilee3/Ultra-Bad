@@ -18,7 +18,6 @@ except KeyError:
 	exit()
 
 if __name__=='__main__':
-try:
 	os.system("git pull")
 	if "Nigeria" == fc:
 		__import__("Ultrabad").license()
